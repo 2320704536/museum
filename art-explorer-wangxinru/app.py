@@ -105,6 +105,6 @@ if query:
                         info_row("Accession Number", data.get("accessionNumber"))
                         info_row("Accession Year", data.get("accessionYear"))
                         info_row("Credit Line", data.get("creditLine"))
-                        info_row("Tags", [t.get("term") for t in (data.get("tags') or [])])
+                        info_row("Tags", [t.get("term") for t in (data.get("tags") or [])])
 else:
     st.info("Enter a keyword in the sidebar to start searching.")
